@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0a0bb9fe-6f71-44b1-af59-de40638bcdd5" name="Default Changelist" comment="" />
+    <list default="true" id="1d271f70-42a3-4973-a50c-5fb901c7ce3b" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,14 +10,6 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -29,26 +21,18 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1duLHNxzlipko1xPnENjBqhkUZz" />
+  <component name="ProjectId" id="1eX36e4u55q7Xx6snR3FAyOcxGz" />
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.geekbrains.spring.mvc.repositories" />
-      <recent name="com.geekbrains.spring.mvc" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\FlameXander\Desktop\Курсы Java\Sources\Spring 1\Lesson 4 (Spring Data)\spring-mvc-data\src\main\webapp" />
-      <recent name="C:\Users\FlameXander\Desktop\spring-mvc\src\main\webapp\WEB-INF\templates" />
-      <recent name="C:\Users\FlameXander\Desktop\spring-mvc\src\main\webapp\WEB-INF" />
-    </key>
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -63,36 +47,33 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Launcher" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.geekbrains.spring.mvc.Launcher" />
-      <module name="spring-mvc-data" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.geekbrains.spring.mvc.controllers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+    <configuration name="JulyMarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="july-market" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekbrains.july.market.JulyMarketApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.Launcher" />
-      </list>
-    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="projectSyncType">
+      <map>
+        <entry key="$USER_HOME$/Apache Spark/scala-for-bigdata" value="PREVIEW" />
+      </map>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0a0bb9fe-6f71-44b1-af59-de40638bcdd5" name="Default Changelist" comment="" />
-      <created>1593269942058</created>
+      <changelist id="1d271f70-42a3-4973-a50c-5fb901c7ce3b" name="Default Changelist" comment="" />
+      <created>1594453935933</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1593269942058</updated>
-      <workItem from="1593956908599" duration="7692000" />
+      <updated>1594453935933</updated>
+      <workItem from="1594453939379" duration="1520000" />
+      <workItem from="1594455497480" duration="13186000" />
     </task>
     <servers />
   </component>

@@ -2,36 +2,33 @@ package com.geekbrains.july.market.entities;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
 import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name = "products")
+@Table(name = "categories")
 @Data
 @NoArgsConstructor
-public class Product {
+public class Category {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private Long id;
+    private long id;
 
     @Column(name = "title")
     private String title;
 
-    @Column(name = "price")
-    private int price;
-
     @ManyToMany
     @JoinTable(
             name = "products_categories",
-            joinColumns = @JoinColumn(name = "product_id"),
-            inverseJoinColumns = @JoinColumn(name = "category_id")
+            joinColumns = @JoinColumn(name = "category_id"),
+            inverseJoinColumns = @JoinColumn(name = "product_id")
     )
-    private List<Category> categories;
+    private List<Product> products;
 
-    public Product(String title, int price, List<Category> categories) {
+    public Category(String title, List<Product> products) {
         this.title = title;
-        this.price = price;
-        this.categories = categories;
+        this.products = products;
     }
 }

@@ -1,10 +1,15 @@
 package com.geekbrains.july.market.utils;
 
+import com.geekbrains.july.market.entities.Category;
 import com.geekbrains.july.market.entities.Product;
 import com.geekbrains.july.market.repositories.specifications.ProductSpecifications;
 import lombok.Getter;
 import org.springframework.data.jpa.domain.Specification;
 
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
 import java.util.Map;
 
 @Getter
@@ -25,10 +30,16 @@ public class ProductFilter {
             spec = spec.and(ProductSpecifications.priceLesserOrEqualsThan(maxPrice));
             filterDefinition.append("&max_price=").append(maxPrice);
         }
-        if (map.containsKey("title") && !map.get("title").isEmpty()){
+        if (map.containsKey("title") && !map.get("title").isEmpty()) {
             String title = map.get("title");
             spec = spec.and(ProductSpecifications.titleLike(title));
             filterDefinition.append("&title=").append(title);
+        }
+        if (map.containsKey("category") && !map.get("category").isEmpty()) {
+            //Не понимаю, почему подчеркивает крассным
+            Category category = map.get("category");
+            spec = spec.and(ProductSpecifications.findByCategory(category));
+            filterDefinition.append("&category=").append(category);
         }
     }
 }

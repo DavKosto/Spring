@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1d271f70-42a3-4973-a50c-5fb901c7ce3b" name="Default Changelist" comment="" />
+    <list default="true" id="e5483365-d07e-4a95-9f58-8daadb5ca3be" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,6 +10,28 @@
   </component>
   <component name="CodeStyleSettingsInfer">
     <option name="done" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="importingSettings">
@@ -21,18 +43,33 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
-  <component name="ProjectId" id="1eX36e4u55q7Xx6snR3FAyOcxGz" />
+  <component name="ProjectId" id="1ePhqEgrevZLrowJkLaBdhx0Pf6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="project.structure.last.edited" value="Global Libraries" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.geekbrains.july.market.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dkost\GeekBrains\july-market\src\main\resources\db\migration" />
+      <recent name="C:\Users\FlameXander\Desktop\july-market\src\main\resources\templates" />
+      <recent name="C:\Users\FlameXander\Desktop\july-market\src\main\resources" />
+      <recent name="C:\Users\FlameXander\Desktop\july-market\src\main\java\com\geekbrains\july\market" />
+      <recent name="C:\Users\FlameXander\Desktop\july-market\src\main\resources\db\migration" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -46,7 +83,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.JulyMarketApplication">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.geekbrains.july.market.Main" />
+      <module name="july-market" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.geekbrains.july.market.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JulyMarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="july-market" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.geekbrains.july.market.JulyMarketApplication" />
@@ -54,30 +104,110 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-  </component>
-  <component name="SbtLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Apache Spark/scala-for-bigdata" value="PREVIEW" />
-      </map>
-    </option>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d271f70-42a3-4973-a50c-5fb901c7ce3b" name="Default Changelist" comment="" />
-      <created>1594453935933</created>
+      <changelist id="e5483365-d07e-4a95-9f58-8daadb5ca3be" name="Default Changelist" comment="" />
+      <created>1594229323582</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594453935933</updated>
-      <workItem from="1594453939379" duration="1520000" />
-      <workItem from="1594455497480" duration="13186000" />
+      <updated>1594229323582</updated>
+      <workItem from="1594229325735" duration="6349000" />
+      <workItem from="1594306150183" duration="599000" />
+      <workItem from="1594312863453" duration="598000" />
+      <workItem from="1594479671181" duration="9843000" />
+      <workItem from="1594554747307" duration="15814000" />
+      <workItem from="1594577596587" duration="3694000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="86" y="364" key="#SQL_Dialects" timestamp="1594229660973">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="86" y="364" key="#SQL_Dialects/0.0.1920.1040@0.0.1920.1040" timestamp="1594229660973" />
+    <state x="501" y="224" key="#com.intellij.ide.util.MemberChooser" timestamp="1594488219802">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="501" y="224" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594488219802" />
+    <state x="237" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1594230696855">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="237" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594230696855" />
+    <state x="426" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594492631941">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="426" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594492631941" />
+    <state x="483" y="274" width="440" height="703" key="FileChooserDialogImpl" timestamp="1594487191056">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="483" y="274" width="440" height="703" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1594487191056" />
+    <state width="1345" height="204" key="GridCell.Tab.0.bottom" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.0.center" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.0.left" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.0.right" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.1.bottom" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.1.center" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.1.left" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1345" height="204" key="GridCell.Tab.1.right" timestamp="1594494530152">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1345" height="204" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594494530152" />
+    <state width="1347" height="347" key="GridCell.Tab.2.bottom" timestamp="1594238079776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1347" height="347" key="GridCell.Tab.2.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594238079776" />
+    <state width="1347" height="347" key="GridCell.Tab.2.center" timestamp="1594238079776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1347" height="347" key="GridCell.Tab.2.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594238079776" />
+    <state width="1347" height="347" key="GridCell.Tab.2.left" timestamp="1594238079776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1347" height="347" key="GridCell.Tab.2.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594238079776" />
+    <state width="1347" height="347" key="GridCell.Tab.2.right" timestamp="1594238079776">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1347" height="347" key="GridCell.Tab.2.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594238079776" />
+    <state x="403" y="256" width="587" height="534" key="find.popup" timestamp="1594230938961">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="403" y="256" width="587" height="534" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594230938961" />
+    <state x="359" y="230" width="672" height="678" key="search.everywhere.popup" timestamp="1594493878298">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="359" y="230" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594493878298" />
   </component>
 </project>

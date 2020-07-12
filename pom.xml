@@ -8,15 +8,16 @@
 		<version>2.3.1.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+
 	<groupId>com.geekbrains.july.market</groupId>
 	<artifactId>july-market</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>july-market</name>
-	<description>Geekbrains July Market</description>
+	<description>Geekbrain July Market</description>
+	<packaging>war</packaging>
 
 	<properties>
-		<maven.compiler.target>11</maven.compiler.target>
-		<maven.compiler.source>11</maven.compiler.source>
+		<java.version>11</java.version>
 	</properties>
 
 	<dependencies>

@@ -6,9 +6,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 public class JulyMarketApplication {
 	// Домашнее задание:
-	// 1. Реализуйте корзину в виде бина (корзина не сущность, а обычный Спринг бин)
-	// 2. Необходимо добавлять товары в корзину, удалять их оттуда, просматривать
-	// список товаров в корзине
+	// 1. Добавьте страницу профиля пользователя с отображением информации о нем (ФИО, email, телефон)
+	// 2. * Доделайте корзины на основе сессионных бинов
+	// 3. * Дать админам возможность блокировать пользователей
 
 	public static void main(String[] args) {
 		SpringApplication.run(JulyMarketApplication.class, args);

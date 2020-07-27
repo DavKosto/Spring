@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title>July Market</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div th:replace="~{navigation :: navigation(Profile)}"/>
+
+<h2>July Market</h2>
+<h4>Профиль</h4>
+
+<div class="container">
+    <table class="table table-striped">
+        <thead>
+        <tr>
+            <td>Имя и Фамилия</td>
+            <td>Телефон</td>
+            <td>Email</td>
+        </tr>
+
+        </thead>
+
+        <tbody>
+        <tr>
+            <td th:text="${user.firstName, user.lastName}"></td>
+            <td th:text="${user.phone}"></td>
+            <td th:text="${user.email}"></td>
+        </tr>
+        </tbody>
+
+        <table sec:authorize="hasAnyRole('ADMIN')" th:each="u : users" class="table table-striped">
+            <thead>
+            <tr>
+                <td>Имя и Фамилия</td>
+                <td>Телефон</td>
+                <td>Email</td>
+                <td>Роли</td>
+                <td>Редактировать</td>
+            </tr>
+
+            </thead>
+
+            <tbody>
+            <tr>
+                <td th:text="${user.firstName, user.lastName}"></td>
+                <td th:text="${user.phone}"></td>
+                <td th:text="${user.email}"></td>
+                <td th:each="${role.name}"></td>
+            // К сожалению не смог тут произвести проверку на role, что бы одной стракой написать изменение доступа
+                <td><a th:href="@{'/profile/changeAccess/'+${user.id}+'?access=ACCESS_FALSE'}">Ограничить доступ</a></td>
+                <td><a th:href="@{'/profile/changeAccess/'+${user.id}+'?access=ACCESS_TRUE'}">Открыть доступ</a></td>
+            </tr>
+            </tbody>
+    </table>
+</div>
+</body>
+</html>

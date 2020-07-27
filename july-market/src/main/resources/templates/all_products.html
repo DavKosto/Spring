@@ -55,17 +55,14 @@
             <td>Id</td>
             <td>Название</td>
             <td>Цена</td>
-            <td>Операции</td>
         </tr>
         </thead>
         <tbody>
-
         <tr th:each="p : ${products.getContent()}">
             <td th:text="${p.id}"></td>
             <td th:text="${p.title}"></td>
             <td th:text="${p.price}"></td>
-            <td><a th:href="@{'/cart/add/' + ${p.id}}">Добавить в корзину</a></td>
-            <td><a th:href="@{'/products/edit/' + ${p.id}}">Редактировать</a></td>
+            <a th:href="@{'/cart/add/' + ${p.id}}" type="button" class="btn btn-warning">Добавить в карзину</a>
         </tr>
         </tbody>
     </table>

@@ -21,41 +21,54 @@ public class Cart {
     private BigDecimal price;
 
     @PostConstruct
-    public void init(){
+    public void init() {
         items = new ArrayList<>();
     }
 
-    public void clear(){
+    public void clear() {
         items.clear();
         recalculate();
     }
 
-    public void addProduct(Product product){
-        for (OrderItem item : items) {
-            if (item.getProduct().getId().equals(product.getId())){
-                item.setQuantity(item.getQuantity()+1);
-                item.setPrice(new BigDecimal(item.getQuantity() * item.getProduct().getPrice()));
+    public void add(Product product) {
+        for (OrderItem i : items) {
+            if (i.getProduct().getId().equals(product.getId())) {
+                i.increment();
                 recalculate();
                 return;
             }
         }
         items.add(new OrderItem(product));
-
+        recalculate();
     }
 
-    public void removeProductById(Long productId){
-        for (int i = 0; i < items.size(); i++) {
-            if (items.get(i).getProduct().getId().equals(productId)){
-                items.remove(i);
+    public void decrement(Product product) {
+        for (OrderItem i : items) {
+            if (i.getProduct().getId().equals(product.getId())) {
+                i.decrement();
+                if (i.isEmpty()) {
+                    items.remove(i);
+                }
                 recalculate();
+                return;
             }
         }
     }
 
-    public void recalculate(){
+    public void removeByProductId(Long productId) {
+        for (int i = 0; i < items.size(); i++) {
+            if (items.get(i).getProduct().getId().equals(productId)) {
+                items.remove(i);
+                recalculate();
+                return;
+            }
+        }
+    }
+
+    public void recalculate() {
         price = new BigDecimal(0.0);
-        for (OrderItem item : items) {
-            price = price.add(item.getPrice());
+        for (OrderItem i : items) {
+            price = price.add(i.getPrice());
         }
     }
 }

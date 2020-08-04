@@ -1,9 +1,9 @@
 package com.geekbrains.july.market.controllers;
 
+
 import com.geekbrains.july.market.beans.Cart;
-import com.geekbrains.july.market.entities.OrderItem;
-import com.geekbrains.july.market.entities.Product;
 import com.geekbrains.july.market.services.ProductsService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -14,49 +14,34 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.List;
 
 @Controller
 @RequestMapping("/cart")
+@AllArgsConstructor
 public class CartController {
+    private ProductsService productsService;
     private Cart cart;
-    private ProductsService productService;
-
-    @Autowired
-    public void setCart(Cart cart) {
-        this.cart = cart;
-    }
-
-    @Autowired
-    public void setProductService(ProductsService productService) {
-        this.productService = productService;
-    }
 
     @GetMapping
-    public String showCart(Model model){
-        List<OrderItem> items = cart.getItems();
-        BigDecimal price = cart.getPrice();
-        model.addAttribute("items", items);
-        model.addAttribute("price", price);
-        return "cart_page";
+    public String showCartPage(Model model) {
+        return "cart";
     }
 
-    @GetMapping("/remove/{id}")
-    public void removeProductOfCart(@PathVariable Long id, HttpServletRequest request, HttpServletResponse response) throws IOException{
-        cart.removeProductById(id);
+    @GetMapping("/add/{productId}")
+    public void addProductToCartById(@PathVariable Long productId, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        cart.add(productsService.findById(productId));
         response.sendRedirect(request.getHeader("referer"));
     }
 
-    @GetMapping("/add/{id}")
-    public void addProductToCart(@PathVariable Long id, HttpServletRequest request, HttpServletResponse response) throws IOException {
-        cart.addProduct(productService.findById(id));
+    @GetMapping("/decrement/{productId}")
+    public void decrementProductToCartById(@PathVariable Long productId, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        cart.decrement(productsService.findById(productId));
         response.sendRedirect(request.getHeader("referer"));
     }
 
-    @GetMapping("/clear")
-    public void clearCart(@PathVariable Long id, HttpServletRequest request, HttpServletResponse response) throws IOException {
-        cart.clear();
+    @GetMapping("/remove/{productId}")
+    public void removeProductFromCartById(@PathVariable Long productId, HttpServletRequest request, HttpServletResponse response) throws IOException {
+        cart.removeByProductId(productId);
         response.sendRedirect(request.getHeader("referer"));
     }
 }

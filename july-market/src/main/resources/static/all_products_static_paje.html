@@ -24,19 +24,7 @@
         </tr>
         </tbody>
     </table>
-
-<!--    <h2>Add new Item</h2>-->
-<!--    <form name="addDemoForm" novalidate ng-submit="submitDemo()">-->
-<!--        ID:-->
-<!--        <input type="text" ng-model="ademo.id">-->
-<!--        Title:-->
-<!--        <input type="text" ng-model="ademo.title">-->
-<!--        Value:-->
-<!--        <input type="text" ng-model="ademo.value">-->
-<!--        <button type="submit">submit</button>-->
-<!--    </form>-->
   </body>
-
 	<script>
 		var app = angular.module('demoApp', []);
 		app.controller('demoCtrl', function($scope, $http) {
@@ -46,16 +34,7 @@
                 $scope.Products = response.data;
               });
 		  };
-
 		  fillTable();
-
-          // $scope.submitDemo = function() {
-          //   $http.post('http://localhost:8199/tm/api/v1/demo', $scope.ademo)
-          //     .then(function(response) {
-          //         console.log(123);
-          //         $scope.Demos.push(response.data);
-          //     });
-          // };
 		});
 	</script>
 </html>

@@ -5,7 +5,6 @@ import com.geekbrains.july.market.entities.User;
 import com.geekbrains.july.market.repositories.RolesRepository;
 import com.geekbrains.july.market.repositories.UsersRepository;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
@@ -15,7 +14,6 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Collection;
-import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
@@ -44,37 +42,6 @@ public class UsersService implements UserDetailsService {
         User user = usersRepository.findOneByPhone(username).orElseThrow(() -> new UsernameNotFoundException("Invalid username or password"));
         return new org.springframework.security.core.userdetails.User(user.getPhone(), user.getPassword(),
                 mapRolesToAuthorities(user.getRoles()));
-    }
-
-    public User findOneUserByPhone(String userPhone){
-        User user = usersRepository.findOneUserByPhone(userPhone);
-        return user;
-    }
-
-    public List<User> findAllBy(){
-        return usersRepository.findAllBy();
-    }
-
-    public void changeAccess(Long id, String access){
-        User user = usersRepository.findOneUserById(id);
-        Collection<Role> roles = user.getRoles();
-        for (Role role : roles) {
-            if (role.getName().startsWith("ACCESS")){
-                role.setName(access);
-                break;
-            }
-        }
-    }
-
-    public Role getAccess(Long id){
-        User user = usersRepository.findOneUserById(id);
-        Collection<Role> roles = user.getRoles();
-        for (Role role : roles) {
-            if (role.getName().startsWith("ACCESS")){
-                return role;
-            }
-        }
-        return null;
     }
 
     private Collection<? extends GrantedAuthority> mapRolesToAuthorities(Collection<Role> roles) {
